@@ -1,7 +1,6 @@
 import { Injectable, NotFoundException } from '@nestjs/common';
 import { PrismaService } from 'prisma/prisma.service';
 import { CreateColumnDto, UpdateColumnDto } from './dto/column.dto';
-import { JwtAuthGuard } from 'src/auth/jwt.guards';
 
 @Injectable()
 export class ColumnService {

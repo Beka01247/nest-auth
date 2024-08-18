@@ -10,9 +10,9 @@ import {
 } from '@nestjs/common';
 import { ColumnService } from './column.service';
 import { CreateColumnDto, UpdateColumnDto } from './dto/column.dto';
-import { User } from '../users/users.decorator'; // Import the User decorator
+import { User } from '../users/users.decorator';
 import { JwtAuthGuard } from 'src/auth/jwt.guards';
-import { OwnershipGuard } from './ownership.guard';
+import { OwnershipGuard } from './column-ownership.guard';
 
 @Controller('columns')
 @UseGuards(JwtAuthGuard)
